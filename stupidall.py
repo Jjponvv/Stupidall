@@ -2,7 +2,7 @@ import string, random, time, os
 
 
 class sprint:
-    def __init__(self, text=str, speed=float):
+    def __init__(self, text=str, speed=0.01):
         symbols = string.printable
         output = ''
         for i in text:
@@ -15,6 +15,6 @@ class sprint:
                     break
                 else:
                     output = output[:-1]
-                    os.system('cls')
+                    os.system('clear')
                      
         print(output)
